@@ -1,4 +1,4 @@
-# things-3-automation
+# things-3-study-automation
 A repo for organizing personal automations with Cultured Code's Things 3.
 
 ### Goal 1:
@@ -21,6 +21,17 @@ This is a little bit clunky, especially compared to how CulturedCode has a nice 
 Anyways, we're using the [Things URL Scheme](https://culturedcode.com/things/support/articles/2803573/).
 The plan is to use python to interact with Things 3 using this scheme so we can automate things.
 Then we can use Alfred workflows to pass in details.
+
+## Known Frustrations
+1. Currently the URL schemes do well in "writing" to Things, and opening it up with different searches or views, but very poor in reading information back to my script. It looks like I'll be unable to get the script to "check" if there's already a project made.
+    * Since it's a lot quicker to make a quick project than drag a bunch of notes around, I'll have to seperate that task (or do it manually)
+
+2. Currently the URL schemes do not support the creation of headings in a project. I use these headings extensively for organization, and so I'm not ready to give them up.
+    * In the meantime I will manually add one in before making my study reminders.
+
+*Perhaps the applescript or JSON solutions will have some answers for in solving these two problems.*
+
+
 
 # Filetree
 * README.md
