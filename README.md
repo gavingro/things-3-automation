@@ -31,6 +31,7 @@ Then we can use Alfred workflows to pass in details.
 
 *Perhaps the applescript or JSON solutions will have some answers for in solving these two problems.*
 
+3. Currently, I prefer to set the dates as "Sometime", then schedule the next session at the end of the current session. In the future, I will add the option of scheduling them all at once (even as a proof of concept).
 
 
 # Filetree

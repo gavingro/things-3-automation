@@ -86,10 +86,10 @@ class ThingsStudyScheduler(ThingsMaker):
             webbrowser.open(
                 self.addlink
                 + title.replace(" ", "%20").replace(":", "%3A")
-                + "&notes="  # &notes=
+                + "&notes="
                 + self.link.replace(":", "%3A")
                 + "&when="
-                + gap.replace(" ", "%20").replace(":", "%3A")
+                + "someday"  # gap.replace(" ", "%20").replace(":", "%3A")
                 + "&tags="
                 + self.tags.replace(" ", "%20")
                 + "&list="

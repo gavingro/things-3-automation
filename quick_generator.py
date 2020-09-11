@@ -5,12 +5,12 @@
 
 from things_classes import ThingsStudyScheduler
 
-lecture_notes_title = "L9 - The meaning of Caves"
-class_title_project = "CAVE 490 - Spelunking"
-notion_url = "notion://www.notion.so/Learning-Hub-5bd3f010c36c4a7c8302ea1658c9ffeb"
+lecture_notes_title = """L2 - Model and Cost Function"""
+class_title_project = """Review: Coursera - Machine Learning"""
+notion_url = """notion://www.notion.so/L2-Model-and-Cost-Function-7537a38f34ac46808580753dbbf6d4ea"""
 
 study_test = ThingsStudyScheduler(lecture_notes_title, class_title_project, notion_url)
 
 
-if __name__ == __main__:
+if __name__ == "__main__":
     study_test.schedule_study_reminders()
