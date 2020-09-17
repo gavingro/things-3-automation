@@ -63,10 +63,10 @@ class ThingsStudyScheduler(ThingsMaker):
 
         # Making the gap-title Dictionary for the reminders function.
         # Placing this here rather than in the next function so I can unit test.
-        day1 = "Review: Make {} into Notion Categories - {} later.".format(
+        day1 = "Review: Make {} into Notion Questions - {} later.".format(
             self.title, self.spaced_repetition_gaps[0]
         )
-        day2 = "Review: Make {} into Notion Quiz Questions - {} later.".format(
+        day2 = "Review: Answer {} questions and categorize Notion page - {} later.".format(
             self.title, self.spaced_repetition_gaps[1]
         )
         title_list = [day1, day2]
