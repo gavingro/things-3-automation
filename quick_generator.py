@@ -5,9 +5,10 @@
 
 from things_classes import ThingsStudyScheduler
 
-lecture_notes_title = """L2 - Limit Rules and Solving Limits Algebraically (2.3)"""
+lecture_notes_title = """L10 - Higher Derivatives and Trig Derivatives"""
 class_title_project = """Review: MATH 116 - Calculus 1 - The Mathematics of Change"""
-notion_url = """notion://www.notion.so/L2-Limit-Rules-and-Solving-Limits-Algebraically-2-3-84effbf12c1b40928991c0fa9f6d558f"""
+notion_url = """https://www.notion.so/L10-Higher-Derivatives-and-Trig-Derivatives-5a059b3025084c079a18f3d5c39a4064"""
+notion_url = notion_url.replace("https:", "notion:")
 
 study_test = ThingsStudyScheduler(lecture_notes_title, class_title_project, notion_url)
 

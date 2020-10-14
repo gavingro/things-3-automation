@@ -89,7 +89,7 @@ class ThingsStudyScheduler(ThingsMaker):
                 + "&notes="
                 + self.link.replace(":", "%3A")
                 + "&when="
-                + "someday"  # gap.replace(" ", "%20").replace(":", "%3A")
+                + gap.replace(" ", "%20").replace(":", "%3A")
                 + "&tags="
                 + self.tags.replace(" ", "%20")
                 + "&list="
