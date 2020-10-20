@@ -5,9 +5,11 @@
 
 from things_classes import ThingsStudyScheduler
 
-lecture_notes_title = """L10 - Higher Derivatives and Trig Derivatives"""
-class_title_project = """Review: MATH 116 - Calculus 1 - The Mathematics of Change"""
-notion_url = """https://www.notion.so/L10-Higher-Derivatives-and-Trig-Derivatives-5a059b3025084c079a18f3d5c39a4064"""
+lecture_notes_title = """L13 - Intro to Classes and Objects (S13 to 140)"""
+class_title_project = (
+    """Review: CPSC 1113 - Principles of Program Structure and Design"""
+)
+notion_url = """https://www.notion.so/L13-Intro-to-Classes-and-Objects-S13-to-140-73573deb6ee04801a031c7f34dd4c42c"""
 notion_url = notion_url.replace("https:", "notion:")
 
 study_test = ThingsStudyScheduler(lecture_notes_title, class_title_project, notion_url)
