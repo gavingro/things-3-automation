@@ -1,5 +1,6 @@
-# Use this personal study scheduler for now until we figure Alfred out.
-# Fill in your Lecture Notes Title, Class (Things Project) Name, and Notion Link
+# Use this program in your text editor to create spaced repetition to-do's.
+# Fill in your Lecture Notes Title (Header), Class (Things Project) Name, and
+#       description to add to each to-do.
 
 # Then, when you're ready, run the script.
 
