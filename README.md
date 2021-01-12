@@ -1,7 +1,7 @@
 # things-3-study-automation
 A repo for organizing personal automations with Cultured Code's Things 3.
 
-### Goal 1:
+### Goal :
 Can we automate the creation of "spaced repetition" tasks in our Retention project?
 
 
@@ -31,7 +31,7 @@ Then we can use Alfred workflows to pass in details.
 
 *Perhaps the applescript or JSON solutions will have some answers for in solving these two problems.*
 
-3. Currently, I prefer to set the dates as "Sometime", then schedule the next session at the end of the current session. In the future, I will add the option of scheduling them all at once (even as a proof of concept).
+3. Currently, I prefer to set the dates as "Sometime", then schedule the next session at the end of the current session. It is simple to set all the tasks to be set for "sometime", but would be organized better if I set them for their proper dates.
 
 
 # Filetree
