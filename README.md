@@ -1,9 +1,8 @@
 # things-3-study-automation
-A repo for organizing personal automations with Cultured Code's Things 3.
+A repo for automating the creation of a series of spaced-repetition to-do's to intelligently schedule your studying.
 
 ### Goal :
-Can we automate the creation of "spaced repetition" tasks in our Retention project?
-
+Can we automate the creation of "spaced repetition" tasks in our Retention projects?
 
 ## Problem (Why I started this):
 I wanted to have good study habits, and I wanted to use my Things 3 environment that I rely on to help me out. I've found a lot of success using spaced repetition in the past, and I excel when I use Things to handle the scheduling of these "check in's".
@@ -16,11 +15,11 @@ I automated it.
 
 At the time of creation, the only coding foundation I had was a little bit of python.
 This is a little bit clunky, especially compared to how CulturedCode has a nice guide for manipulating [Things 3 with Applescript](https://culturedcode.com/things/download/Things3AppleScriptGuide.pdf).
-*In the future, I'll probably learn some applescript and "re-do" this project in that language.*
+*In the future, I'll probably learn some applescript and "re-do" this project with that in mind.*
 
 Anyways, we're using the [Things URL Scheme](https://culturedcode.com/things/support/articles/2803573/).
 The plan is to use python to interact with Things 3 using this scheme so we can automate things.
-Then we can use Alfred workflows to pass in details.
+Then we can even use Alfred workflows to pass in details.
 
 ## Known Frustrations
 1. Currently the URL schemes do well in "writing" to Things, and opening it up with different searches or views, but very poor in reading information back to my script. It looks like I'll be unable to get the script to "check" if there's already a project made.
@@ -38,8 +37,12 @@ Then we can use Alfred workflows to pass in details.
 * README.md
   * *This document.*
 
-* things_trials.py
-  * *The current working out of things classes experiments*
+* main.py
+  * *The program to be run in order to schedule the to-do's.*
+
+* things_maker.py
+* things_study_scheduler.py
+  * *Class Files*
 
 * test.py
   * *Script of Personal Unit-Testing*
