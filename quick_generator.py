@@ -5,11 +5,11 @@
 
 from things_classes import ThingsStudyScheduler
 
-lecture_notes_title = (
-    """L13 - Discrete Random Variables and Linear Combinations (3.4)"""
+lecture_notes_title = """L1 - Working with Vectors"""
+class_title_project = """Review: MATH 152 - Linear Algebra"""
+notion_url = (
+    """https://www.notion.so/L1-Working-with-Vectors-8a06aa5ef5074ea7ab4bd3992ca7dfff"""
 )
-class_title_project = """Review: STAT 101 - Introduction to Statistics"""
-notion_url = """https://www.notion.so/L13-Discrete-Random-Variables-and-Linear-Combinations-3-4-b2cd25095f4c40f6be2225401b86eacd"""
 notion_url = notion_url.replace("https:", "notion:")
 
 study_test = ThingsStudyScheduler(lecture_notes_title, class_title_project, notion_url)
