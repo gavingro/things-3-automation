@@ -1,6 +1,7 @@
 # things-3-study-automation
 A repo for automating the creation of a series of spaced-repetition to-do's to intelligently schedule your studying.
 
+
 ### Goal :
 Can we automate the creation of "spaced repetition" tasks in our Retention projects?
 
@@ -10,9 +11,10 @@ I wanted to have good study habits, and I wanted to use my Things 3 environment 
 The catch is, it was a bit of labour up front to manually make these todo's. I had been able to overcome that and do the front-loaded admin work by copying and filling in templates, but that's still a lot of needless toil.
 I anticipated that the friction of the monotonous copy-pasting of tasks was going to stop me from studying in an optimal, organized way as I went back to school.
 
-## Solution
-I automated it.
+# Usage
+*To Come*
 
+## Thoughts
 At the time of creation, the only coding foundation I had was a little bit of python.
 This is a little bit clunky, especially compared to how CulturedCode has a nice guide for manipulating [Things 3 with Applescript](https://culturedcode.com/things/download/Things3AppleScriptGuide.pdf).
 *In the future, I'll probably learn some applescript and "re-do" this project with that in mind.*
@@ -30,25 +32,15 @@ Then we can even use Alfred workflows to pass in details.
 
 *Perhaps the applescript or JSON solutions will have some answers for in solving these two problems.*
 
-3. Currently, I prefer to set the dates as "Sometime", then schedule the next session at the end of the current session. It is simple to set all the tasks to be set for "sometime", but would be organized better if I set them for their proper dates.
-
+3. Currently, I prefer to set the dates as "Sometime", then schedule the next session at the end of the current session. As such, I've been using this for some weeks without realizing the dates were not cumulative in their spaces. This will be fixed in the next build.
 
 # Filetree
 * README.md
   * *This document.*
 
 * main.py
-  * *The program to be run in order to schedule the to-do's.*
+  * *The program to be run in order to schedule the to-do's for information you fill in with an editor.*
 
-* things_maker.py
-* things_study_scheduler.py
-  * *Class Files*
-
-* test.py
-  * *Script of Personal Unit-Testing*
 
 # Requirements
-*To Come*
-
-# Usage
-*To Come*
+  * None (Just Python 3). The only imports are from the Python Standard Library.
