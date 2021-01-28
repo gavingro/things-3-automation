@@ -37,8 +37,6 @@ I anticipated that the friction of the monotonous copy-pasting of tasks was goin
 
 *Perhaps the applescript or JSON solutions will have some answers for in solving these two problems.*
 
-3. Currently, I prefer to set the dates as "Sometime", then schedule the next session at the end of the current session. As such, I've been using this for some weeks without realizing the dates were not cumulative in their spaces. This will be fixed in the next build.
-
 # Filetree
 
 * main.py
