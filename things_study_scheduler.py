@@ -23,24 +23,22 @@ class ThingsStudyScheduler(ThingsMaker):
 
     """
 
-    spaced_repetition_gaps = [
-        "1 day",
-        "1 days",
-        "2 days",
-        "3 days",
-        "5 days",
-        "7 days",
-        "10 days",
-        "2 weeks",
-        "3 weeks",
-        "5 weeks",
-        "2 months",
-        "3 months",
-        "5 months",
-        "7 months",
-        "10 months",
-        "1 year",
-    ]
+    spaced_repetition_gaps = {
+        # "1 day": 0,     Included by hand to say today and tomorrow
+        # "1 days": 1,
+        "2 days": 3,
+        "3 days": 6,
+        "5 days": 11,
+        "8 days": 19,
+        "2 weeks": 33,
+        "3 weeks": 54,
+        "5 weeks": 89,
+        "2 months": 121,
+        "3 months": 181,
+        "5 months": 320,
+        "8 months": 561,
+        "1 year": 926,
+    }
 
     def __init__(self, title, project, desc=None):
         self.title = title
@@ -52,18 +50,17 @@ class ThingsStudyScheduler(ThingsMaker):
         self.tags = "%F0%9F%A4%A9 Do Quick %F0%9F%9A%80"
 
         # Making the gap-title Dictionary for the reminders function.
-        # Placing this here rather than in the next function so I can unit test.
-        day1 = "Review: Make {} into Notion Questions - {} later.".format(
-            self.title, self.spaced_repetition_gaps[0]
-        )
-        day2 = "Review: Answer {} questions and categorize Notion page - {} later.".format(
-            self.title, self.spaced_repetition_gaps[1]
-        )
-        title_list = [day1, day2]
-        for gap in self.spaced_repetition_gaps[2:]:
-            title_list.append("Review: {} - {} later".format(self.title, gap))
+
+        title_gap_dict = {
+            f"Review: {self.title} - {gap} later.": days
+            for gap, days in self.spaced_repetition_gaps.items()
+        }
+
+        title_gap_dict[f"Review: Make {self.title} into Review Questions - today"] = 0
+        title_gap_dict[f"Review: Answer {self.title} Review Questions - tomorrow"] = 1
+
         self.gap_title_dict = {
-            gap: title for gap, title in zip(self.spaced_repetition_gaps, title_list)
+            f"in {gap} days": title for title, gap in title_gap_dict.items()
         }
 
     def clean_attributes(self):

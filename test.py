@@ -23,8 +23,9 @@ class TestStudyScheduler(unittest.TestCase):
         self.assertEqual(str, type(self.study_scheduler.title))
         self.assertEqual(str, type(self.study_scheduler.project))
         self.assertIn("Do Quick", self.study_scheduler.tags)
-        self.assertEqual(len(self.study_scheduler.spaced_repetition_gaps), 16)
-        self.assertTrue(self.study_scheduler.gap_title_dict["1 day"])
+        self.assertEqual(len(self.study_scheduler.spaced_repetition_gaps), 12)
+        self.assertEqual(len(self.study_scheduler.gap_title_dict), 14)
+        self.assertTrue(self.study_scheduler.gap_title_dict["in 1 days"])
 
     def test_things_study_scheduler_clean_attributes(self):
         self.study_scheduler.clean_attributes()
