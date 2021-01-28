@@ -4,7 +4,10 @@ A repo for automating the creation of a series of spaced-repetition to-do's to i
 
 
 # Usage
-*To Come*
+Originally, I was hoping to link this up to Alfred like I had some other automation systems. But, it's simpler now to just run from your text editor, which is what I do when I need to quickly schedule something.
+
+![You add in the details to the main.py file, then run it](demo/things_scheduler_1.gif)
+![And out pop the spaced to-do's.](demo/things_scheduler_2.gif)
 
 
 ## Thoughts
